@@ -1,0 +1,12 @@
+Parity Hack Toy Problem
+
+Objectives:
+
+1. Look at the use of delegatecall in library contracts
+2. Spot a major vulnerability in a contract using this pattern
+3. Discuss the 2017 Parity Hack
+4. Go through some Hardhat/Waffle patterns
+
+
+For more on the parity hack see https://blog.openzeppelin.com/on-the-parity-wallet-multisig-hack-405a8c12e8f7/
+For the contract that was hacked: https://github.com/openethereum/parity-ethereum/blob/4d08e7b0aec46443bf26547b17d10cb302672835/js/src/contracts/snippets/enhanced-wallet.sol#L216 

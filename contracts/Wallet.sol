@@ -22,11 +22,6 @@ contract Wallet {
         return address(this).balance;
     }
     
-    function deposit() external payable {
-        (bool success, ) = _walletLibrary.delegatecall(msg.data);
-        require(success, "library call failed");
-    }
-    
     fallback() external payable {
         (bool success, ) = _walletLibrary.delegatecall(msg.data);
         require(success, "library call failed");
