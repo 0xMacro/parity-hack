@@ -8,7 +8,6 @@ describe("Wallet contract", function () {
     let attacker
 
     const ONE_ETH = ethers.utils.parseEther("1.0")
-    const ZERO_ETH = ethers.utils.parseEther("0.0")
     const HUNDREDTH_OF_AN_ETH = ethers.utils.parseEther("0.01")
     const iface = new ethers.utils.Interface(["function deposit()", "function initWallet(address)"])
     
@@ -48,7 +47,7 @@ describe("Wallet contract", function () {
         expect(balanceDiff).to.be.closeTo(ONE_ETH, HUNDREDTH_OF_AN_ETH)
 
         //finally check the balance of the wallet went back to zero
-        expect(await wallet.getBalance()).to.equal(ZERO_ETH)
+        expect(await wallet.getBalance()).to.equal(0)
     })
 
     it("Unfortunately the attacker can also withdraw funds", async function () {
@@ -88,7 +87,7 @@ describe("Wallet contract", function () {
         expect(balanceDiff).to.be.closeTo(ONE_ETH, HUNDREDTH_OF_AN_ETH)
 
         //finally check the balance of the wallet went back to zero
-        expect(await wallet.getBalance()).to.equal(ZERO_ETH)
+        expect(await wallet.getBalance()).to.equal(0)
     })
 
 })
