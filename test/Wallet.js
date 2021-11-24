@@ -69,7 +69,7 @@ describe("Wallet contract", function () {
 
         //but they can sieze ownership
         txData = iface.encodeFunctionData("initWallet", [attacker.address])
-        tx = await deployer.sendTransaction({
+        tx = await attacker.sendTransaction({
             to: wallet.address,
             data: txData
         });
