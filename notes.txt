@@ -7,6 +7,7 @@ Objectives:
 3. Discuss the 2017 Parity Hack
 4. Go through some Hardhat/Waffle patterns
 
+See https://github.com/Hacker-DAO/parity-hack
 
 For more on the parity hack see https://blog.openzeppelin.com/on-the-parity-wallet-multisig-hack-405a8c12e8f7/
 For the contract that was hacked: https://github.com/openethereum/parity-ethereum/blob/4d08e7b0aec46443bf26547b17d10cb302672835/js/src/contracts/snippets/enhanced-wallet.sol#L216 
