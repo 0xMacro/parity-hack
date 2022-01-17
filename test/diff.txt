@@ -1,0 +1,10 @@
+    const iface = new ethers.utils.Interface(["function deposit()", "function initWallet(address)"])
+
+
+        const txData = iface.encodeFunctionData("deposit", [])
+        const tx = await deployer.sendTransaction({
+            to: wallet.address,
+            value: ONE_ETH,
+            data: txData
+        });
+        await tx.wait()

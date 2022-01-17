@@ -4,8 +4,8 @@ Objectives:
 
 1. Look at the use of delegatecall in library contracts
 2. Spot a major vulnerability in a contract using this pattern
-3. Discuss the 2017 Parity Hack
-4. Go through some Hardhat/Waffle patterns
+3. Discuss the 2017 Parity Multisig Wallet hack
+4. Go through some Hardhat/Ethers patterns
 
 See https://github.com/Hacker-DAO/parity-hack
 
